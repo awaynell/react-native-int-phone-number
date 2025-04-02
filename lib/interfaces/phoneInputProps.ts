@@ -1,13 +1,13 @@
-import { Ref, ReactNode } from 'react';
-import { TextInputProps } from 'react-native';
+import { Ref, ReactNode } from "react";
+import { TextInputProps } from "react-native";
 
-import { ICountry } from './country';
-import { ICountryCca2 } from './countryCca2';
-import { ILanguage } from './language';
-import { ITheme } from './theme';
-import { IModalStyles } from './modalStyles';
-import { IPhoneInputStyles } from './phoneInputStyles';
-import { IPhoneInputRef } from './phoneInputRef';
+import { ICountry } from "./country";
+import { ICountryCca2 } from "./countryCca2";
+import { ILanguage } from "./language";
+import { ITheme } from "./theme";
+import { IModalStyles } from "./modalStyles";
+import { IPhoneInputStyles } from "./phoneInputStyles";
+import { IPhoneInputRef } from "./phoneInputRef";
 
 interface BasePhoneInput extends TextInputProps {
   language?: ILanguage;
@@ -41,8 +41,8 @@ interface BasePhoneInput extends TextInputProps {
 interface IPhoneInputPropsWithoutRef extends BasePhoneInput {
   value: string;
   onChangePhoneNumber: (phoneNumber: string) => void;
-  selectedCountry: ICountry | undefined | null;
-  onChangeSelectedCountry: (country: ICountry) => void;
+  selectedCountry?: ICountry | undefined | null;
+  onChangeSelectedCountry?: (country: ICountry) => void;
   ref?: never;
 }
 
