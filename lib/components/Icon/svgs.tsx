@@ -42,5 +42,6 @@ export const svgs = {
         </Defs>
       </>
     ),
+    viewBox: "0 0 20 20",
   },
 };
